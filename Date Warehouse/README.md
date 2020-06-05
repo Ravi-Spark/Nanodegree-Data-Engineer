@@ -8,14 +8,14 @@ Their user activity and songs metadata data resides in json files in S3. The goa
 
 **Follow the process to run the project :**
 
-a. Put Credential dwh.cfg accordingly (AWS)
+a. Put Credential dwh.cfg accordingly (AWS)    
 
-b. Run the create_tables.py to set up the needed infrastructure for this project.
+b. Run the create_tables.py to set up the needed infrastructure for this project.         
 
-c. Finally, execute the etl.py script to extract data from the files in S3, stage it in redshift, and finally store it in the dimensional tables.
+c. Finally, execute the etl.py script to extract data from the files in S3, stage it in redshift, and finally store it in the dimensional tables.             
 
 **Project Files:**
-"dwh.cfg" for aws Credential configuration
-"create_tables.py" drops and creates tables. You run this file to reset your tables before each time you run your ETL scripts.
-"sql_queries.py" contains all your sql queries (create, drop and insert data)
+"dwh.cfg" for aws Credential configuration    
+"create_tables.py" drops and creates tables. You run this file to reset your tables before each time you run your ETL scripts.   
+"sql_queries.py" contains all your sql queries (create, drop and insert data)      
 "etl.py" reads and processes data and loads them into your tables
